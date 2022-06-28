@@ -1,0 +1,87 @@
+.debug{
+    background-color: rgba(165, 42, 42, 0.493);
+    border: 1px solid black;
+}
+
+body{
+    background-color: rgb(225, 209, 245);
+}
+
+//HEADER
+header{
+    background-color: black;
+    img{
+        width: 100px;
+    }
+    ul li{
+        list-style: none;
+        margin: 0 20px;
+        &::after{
+            content: ' ';
+            display: inline-block;
+            height: 3px;
+            width: 100%;
+            background-color: violet;
+        }
+
+        a{
+            font-size: 1.5rem;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: white;
+            &:hover{
+                color: violet;
+            }
+            &.active{
+                color: violet;
+            }
+
+        }
+    }
+
+}
+
+//MAIN
+
+.home, .about{
+    .btn-primary{
+        background-color: black;
+        color: violet;
+    }
+}
+
+.about, .contacts{
+    min-height: 63vh;
+}
+
+.contacts{
+    i{
+        font-size: 3rem;
+        margin: 0 20px;
+    }
+}
+
+//FOOTER
+
+footer{
+    background-color: black;
+
+    a{
+        color:whitesmoke ;
+        text-decoration: none;
+        &:hover{
+            color: violet;
+        }
+    }
+
+    ul{
+        list-style: none;
+        li{
+            &:first-child{
+                color: rgb(179, 165, 165);
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

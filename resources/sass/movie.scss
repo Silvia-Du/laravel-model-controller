@@ -1,0 +1,38 @@
+
+
+    .box{
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0);
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        .top {
+            background-color: black;
+            border-radius: 10px 10px 0 0;
+            border: 1px solid violet;
+            p{
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: violet;
+            }
+        }
+        .bottom {
+
+            border-radius: 0 0 10px 10px;
+            p{
+                font-size: 0.9rem;
+                font-weight: bold;
+            }
+            .btn{
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 0.8rem;
+
+            }
+        }
+    }
+
+

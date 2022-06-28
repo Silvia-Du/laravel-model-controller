@@ -1,8 +1,103 @@
-.debug {
-  background-color: rgba(165, 42, 42, 0.493);
+.box {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+  transition: all 1s;
+}
+.box:hover {
+  transform: scale(1.1);
+}
+.box .top {
+  background-color: black;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid violet;
+}
+.box .top p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: violet;
+}
+.box .bottom {
+  border-radius: 0 0 10px 10px;
+}
+.box .bottom p {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.box .bottom .btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .debug {
   background-color: rgba(165, 42, 42, 0.493);
+  border: 1px solid black;
 }
 
+body {
+  background-color: rgb(225, 209, 245);
+}
+
+header {
+  background-color: black;
+}
+header img {
+  width: 100px;
+}
+header ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+header ul li::after {
+  content: " ";
+  display: inline-block;
+  height: 3px;
+  width: 100%;
+  background-color: violet;
+}
+header ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+header ul li a:hover {
+  color: violet;
+}
+header ul li a.active {
+  color: violet;
+}
+
+.home .btn-primary, .about .btn-primary {
+  background-color: black;
+  color: violet;
+}
+
+.about, .contacts {
+  min-height: 63vh;
+}
+
+.contacts i {
+  font-size: 3rem;
+  margin: 0 20px;
+}
+
+footer {
+  background-color: black;
+}
+footer a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+footer a:hover {
+  color: violet;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li:first-child {
+  color: rgb(179, 165, 165);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
