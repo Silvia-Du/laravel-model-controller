@@ -81,6 +81,12 @@ header ul li a.active {
 .contacts i {
   font-size: 3rem;
   margin: 0 20px;
+  transition: all 0.5s;
+}
+.contacts i:hover {
+  color: violet;
+  transform: scale(1.1);
+  transform: rotate(10deg);
 }
 
 footer {
